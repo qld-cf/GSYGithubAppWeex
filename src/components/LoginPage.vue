@@ -4,11 +4,11 @@
             <image :src="logo" class="logo"></image>
             <div style="flex-direction: row; margin-top: 50px">
                 <text class="icon-text" :style="{fontFamily: 'wxcIconFont'}">{{'\ue666'}}</text>
-                <input class="input" @input="onUserNameChange" ref="username" placeholder="用户名" :value="username"/>
+                <input class="input" @input="onUserNameChange" ref="username" placeholder="用户名" :value="username" autofocus=true/>
             </div>
             <div style="flex-direction: row; margin-top: 50px">
                 <text class="icon-text" :style="{fontFamily: 'wxcIconFont'}">{{'\ue60e'}}</text>
-                <input class="input" @input="onPWChange" type="password" ref="password" placeholder="密码"
+                <input class="input" @input="onPWChange" type="password" ref="password" placeholder="密码" autofocus=true
                        :value="password"/>
             </div>
             <wxc-button text="登录" type="red"

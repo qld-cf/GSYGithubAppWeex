@@ -3,7 +3,7 @@
         <navigation-bar :title="title" :onLeftButtonClick="function(){toBack()}"
                         :rightIcon="' '"></navigation-bar>
         <r-l-list ref="dylist" :listItemName="itemClass" :listData="list"
-                  :listHeight="listHeight"
+                  :listHeight="999"
                   :forLoadMore="onLoadMore" :forRefresh="onRefresh" :itemClick="itemClick"></r-l-list>
     </div>
 </template>
@@ -27,7 +27,7 @@
                 title: "",
                 currentPage: 1,
                 list: [],
-                listHeight: 0,
+                listHeight:  981,
                 itemClass:  'EventItem',
                 dataType:   '',
                 mainStyle: {}
@@ -36,7 +36,9 @@
         created: function () {
             this.init()
             this.mainStyle = getEntryPageStyle(Utils)
+            // console.log('listheight',Utils);
             this.listHeight = getListHeight(Utils.env.getScreenHeight() - navigatorbBarHeight, Utils)
+            console.log('listheight',this.listHeight);
 
         },
         activated: function () {

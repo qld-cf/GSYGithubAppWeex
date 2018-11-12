@@ -70,7 +70,7 @@
             headerComponent: {type: String},
             headerData: {type: Object},
             bottomEmpty: {type: [String, Number], default:'240px'},
-            listHeight: {type: [String, Number], default:'1234px'},
+            listHeight: {type: [String, Number], default:'880px'},
             listWidth: {type: [String, Number], default:'750px'},
         },
         data() {
@@ -220,7 +220,7 @@
     }
 
     .list {
-        height: 1234px;
+        height: 880px;
     }
     .empty-page {
         width: 750px;

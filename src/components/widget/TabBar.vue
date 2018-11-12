@@ -63,7 +63,7 @@
     .tab-container {
         flex: 1;
         flex-direction: row;
-        position: absolute;
+        position: relative;
     }
 
     .tab-text {
